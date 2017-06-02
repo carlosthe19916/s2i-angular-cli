@@ -51,7 +51,7 @@ if [ "$(ls /tmp/artifacts/ 2>/dev/null)" ]; then
   echo "---> Restoring build artifacts..."
   mv /tmp/artifacts/* ./
 fi
-
+}
 echo "---> Installing angular-cli"
 npm install -g @angular/cli > /dev/null 2>&1
 
