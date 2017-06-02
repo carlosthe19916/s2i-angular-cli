@@ -52,6 +52,9 @@ if [ "$(ls /tmp/artifacts/ 2>/dev/null)" ]; then
   mv /tmp/artifacts/* ./
 fi
 
+echo "---> Installing angular-cli"
+npm install -g @angular/cli > /dev/null 2>&1
+
 echo "---> Building your Node application from source"
 npm install -s
 
