@@ -51,8 +51,5 @@ fi
 echo "---> Building your Node application from source"
 npm install -d
 
-echo "---> Building application from source..."
-ng build --env=prod
-
 # Fix source directory permissions
 fix-permissions ./
