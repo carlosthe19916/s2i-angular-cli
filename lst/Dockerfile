@@ -1,4 +1,4 @@
-FROM ryanj/centos7-s2i-nodejs:lts
+FROM ryanj/centos7-s2i-nodejs:current
 
 ENV ANGULAR_CLI_VERSION latest
 
