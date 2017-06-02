@@ -55,9 +55,6 @@ fi
 echo "---> Building your Node application from source"
 npm install -s
 
-echo "---> Installing angular-cli"
-npm install -g @angular/cli
-
 echo "---> Building application from source..."
 ng build --env=prod
 
