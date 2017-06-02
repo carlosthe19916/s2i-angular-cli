@@ -1,4 +1,4 @@
-FROM ryanj/centos7-s2i-nodejs:current
+FROM centos/nodejs-6-centos7
 
 ENV ANGULAR_CLI_VERSION latest
 
