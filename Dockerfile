@@ -1,4 +1,4 @@
-FROM bucharestgold/centos7-s2i-nodejs:7.x
+FROM bucharestgold/centos7-s2i-nodejs:6.x
 
 ENV ANGULAR_CLI_VERSION 1.0.0
 
