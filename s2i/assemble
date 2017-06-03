@@ -59,7 +59,10 @@ if [ ! -z "$YARN_ENABLED" ]; then
 	yarn install $YARN_ARGS
 else
 	echo "---> Using 'npm install'"
-	npm install
+	npm install -s
+
+	echo "---> Using 'npm install --only=dev'"
+	npm install --only=dev
 fi
 
 # Fix source directory permissions
