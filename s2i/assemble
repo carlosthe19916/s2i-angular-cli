@@ -67,11 +67,11 @@ else
 	fi
 fi
 
-echo "---> Building application from source..."
+echo "---> Building application from source using ng build..."
 if [ "$NODE_ENV" == "production" ]; then
-	ng build --env=prod
+	ng build --env=prod >/dev/null 2>&1
 else
-	ng build --env=dev
+	ng build --env=dev >/dev/null 2>&1
 fi
 
 # Fix source directory permissions
