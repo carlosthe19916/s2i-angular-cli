@@ -59,7 +59,7 @@ if [ ! -z "$YARN_ENABLED" ]; then
 	yarn install $YARN_ARGS
 else
 	echo "---> Using 'npm install'"
-	npm install -s
+	npm install
 fi
 
 # Fix source directory permissions
