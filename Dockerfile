@@ -1,4 +1,4 @@
-FROM bucharestgold/centos7-s2i-nodejs:6.x
+FROM bucharestgold/centos7-s2i-nodejs:7.x
 
 ENV RUBY_VERSION 2.4
 ENV ANGULAR_CLI_VERSION 1.0.0

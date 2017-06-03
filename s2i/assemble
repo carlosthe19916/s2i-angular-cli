@@ -63,7 +63,7 @@ else
 
 	if [ "$NODE_ENV" == "production" ]; then
 		echo "---> Using 'npm install --only=dev'"
-		npm install --only=dev
+		npm install --only=dev -s
 	fi
 fi
 
