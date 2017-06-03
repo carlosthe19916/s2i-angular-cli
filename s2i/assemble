@@ -61,8 +61,17 @@ else
 	echo "---> Using 'npm install'"
 	npm install -s
 
-	echo "---> Using 'npm install --only=dev'"
-	npm install -s --only=dev
+	if [ "$NODE_ENV" == "production" ]; then
+		echo "---> Using 'npm install --only=dev'"
+		npm install --only=dev
+	fi
+fi
+
+echo "---> Building application from source..."
+if [ "$NODE_ENV" == "production" ]; then
+	ng build --env=prod
+else
+	ng build --env=dev
 fi
 
 # Fix source directory permissions
