@@ -63,9 +63,12 @@ else
 fi
 
 echo "---> Building application from source..."
-echo "current directory:" pwd
-echo "list:" ls
-cd /opt/app-root/src && ng build --env=prod
+echo "Script executed from: ${PWD}"
+BASEDIR=$(dirname $0)
+echo "Script location: ${BASEDIR}"
+
+cd /opt/app-root/src
+ng build --env=prod
 
 # Fix source directory permissions
 # fix-permissions ./
