@@ -62,7 +62,7 @@ else
 	npm install -s
 
 	echo "---> Using 'npm install --only=dev'"
-	npm install --only=dev
+	npm install -s --only=dev
 fi
 
 # Fix source directory permissions
