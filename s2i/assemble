@@ -62,6 +62,8 @@ else
 	npm install -s
 fi
 
+npm install --dev
+
 # Fix source directory permissions
 # fix-permissions ./
 # Allow this script to fail without failing a build
