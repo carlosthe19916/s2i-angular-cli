@@ -5,6 +5,8 @@ ENV ANGULAR_CLI_VERSION 1.0.0
 
 USER root
 
+RUN npm config set unsafe-perm true
+
 # To use subscription inside container yum command has to be run first (before yum-config-manager)
 # https://access.redhat.com/solutions/1443553
 RUN yum install -y centos-release-scl && \
