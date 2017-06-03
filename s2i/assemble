@@ -62,16 +62,6 @@ else
 	npm install -s
 fi
 
-echo "---> Building application using angular-cli...****"
-npm install
-
-echo "---> Building application using angular-cli..."
-node_modules/.bin/ng build --prod
-#ng build --env=prod
-
-echo "ssdsd"
-ng version
-
 # Fix source directory permissions
 # fix-permissions ./
 # Allow this script to fail without failing a build
