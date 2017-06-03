@@ -66,7 +66,11 @@ echo "---> Building application using angular-cli...****"
 npm install
 
 echo "---> Building application using angular-cli..."
-ng build --env=prod
+node_modules/.bin/ng build --prod
+#ng build --env=prod
+
+echo "ssdsd"
+ng version
 
 # Fix source directory permissions
 # fix-permissions ./
