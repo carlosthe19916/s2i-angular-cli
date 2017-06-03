@@ -62,12 +62,7 @@ else
 	npm install -s
 fi
 
-echo "---> Building application from source..."
-echo "Script executed from: ${PWD}"
-BASEDIR=$(dirname $0)
-echo "Script location: ${BASEDIR}"
-
-cd /opt/app-root/src
+echo "---> Building application using angular-cli..."
 ng build --env=prod
 
 # Fix source directory permissions
