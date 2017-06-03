@@ -7,7 +7,7 @@ USER root
 # prepare a user which runs everything locally! - required in child images!
 RUN useradd --user-group --create-home --shell /bin/false app
 
-ENV HOME=/opt/app-root
+ENV HOME=/opt/app-root/src
 WORKDIR $HOME
 
 RUN npm install -g @angular/cli@$ANGULAR_CLI_VERSION >/dev/null 2>&1 && npm cache clean
