@@ -74,6 +74,9 @@ else
 	ng build $NG_ARGS >/dev/null 2>&1
 fi
 
+echo "Removing dev depependencies executing with $PRUNE_ARGS"
+npm prune $PRUNE_ARGS
+
 # Fix source directory permissions
 # fix-permissions ./
 # Allow this script to fail without failing a build
