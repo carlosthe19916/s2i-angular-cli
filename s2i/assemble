@@ -75,7 +75,7 @@ else
 fi
 
 echo "---> Removing dev depependencies executing with $PRUNE_ARGS"
-npm prune $PRUNE_ARGS
+npm prune $PRUNE_ARGS >/dev/null 2>&1
 
 # Fix source directory permissions
 # fix-permissions ./
